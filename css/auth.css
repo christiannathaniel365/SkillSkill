@@ -1,0 +1,137 @@
+html {
+  background: linear-gradient(180deg, #1d4dd1, #2553ed);
+  height: 100vh;
+}
+.authTitle {
+  display: flex;
+  justify-content: center;
+}
+.authTitle h1 {
+  margin: auto 0;
+}
+.span1FooterTitle {
+  color: rgb(255, 255, 255);
+}
+.span2FooterTitle {
+  color: #77c6e2;
+}
+.navLogo {
+  width: 5%;
+}
+header a {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.3rem;
+  background-color: #ffffff18;
+  border: #ffffff66 solid;
+  text-decoration: none;
+  border-radius: 1.5rem;
+}
+header a div {
+  display: flex;
+}
+header a svg {
+  width: 1.5rem;
+  fill: #ffffff;
+  /* border:solid; */
+  text-decoration: none;
+}
+header a p {
+  color: #ffffff;
+}
+/* Login Style */
+#loginForm {
+  background-color: aliceblue;
+  border-radius: 0.3rem;
+  margin: 4rem auto;
+  padding: 1.5rem 0;
+  width: 40%;
+  text-align: center;
+  /* border: solid; */
+}
+
+#loginForm form div {
+  margin: 0.5rem 0;
+  /* border: solid; */
+}
+.inp {
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  border: 1.5px solid #dedede;
+  /* border: solid; */
+}
+.loginFlex1 {
+  display: flex;
+  justify-content: center;
+
+  gap: 10rem;
+}
+.btnLogin {
+  width: 80%;
+  background-image: linear-gradient(135deg, #4681ed 40%, #49a254);
+  color: #ffffff;
+  font-weight: 600;
+  height: 2rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+.loginFlex1 a {
+  margin: auto 0;
+}
+.loginFlex2 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  /* border: solid; */
+}
+.loginFlex2 hr {
+  width: 9.1rem;
+  margin: auto 0;
+  height: 0%;
+}
+.altLogin {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+.altLogin a {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.altLogin a svg {
+  width: 75%;
+  height: 75%;
+}
+.googleIcon {
+  border: 0.1rem solid rgba(0, 0, 0, 0.08);
+}
+.githubIcon {
+  background-color: #000000;
+}
+.githubIcon svg {
+  fill: #ffffff;
+}
+
+/* End Login Style */
+
+/* Register Style */
+.RegisterFlex1 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  /* border: solid; */
+}
+.RegisterFlex1 hr {
+  width: 11.6rem;
+  margin: auto 0;
+  height: 0%;
+}

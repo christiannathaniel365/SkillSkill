@@ -1,0 +1,351 @@
+html {
+  scroll-behavior: smooth;
+}
+p {
+  text-transform: lowercase;
+}
+
+/*  Header Style */
+/* Navbar Style */
+nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 0 1rem;
+  width: 100%;
+}
+.navTitle {
+  /* border: solid; */
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.navLogo {
+  width: 10%;
+}
+.navTitle > h1 {
+  margin: auto 0px;
+}
+.span1NavTitle {
+  color: rgb(59, 59, 208);
+}
+.span2NavTitle {
+  color: rgb(20, 198, 73);
+}
+.navList {
+  width: 60%;
+
+  display: flex;
+  /* justify-content: center; */
+  gap: 5%;
+}
+.navList > li {
+  margin: auto;
+  list-style: none;
+}
+.navList > .navLink > a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+.activeNavLink {
+  border-bottom: solid #245ecb;
+}
+.btn {
+  background-color: #49a254;
+  padding: 0.3rem 1rem 0.45rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+
+  color: white;
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: none;
+}
+/* Main */
+main {
+  background-color: #f3f4f6;
+}
+/* Section Jumbotron */
+#jumbotron {
+  background-image: linear-gradient(135deg, #245ecb, aliceblue);
+  padding: 5rem 0rem 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.jumbotronTitle {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+
+  margin: 2rem 0px;
+  padding: 0px auto;
+}
+.jumbotronTitle h2 {
+  font-size:2.5em;
+  line-height:1.2;
+  color:#ffffff;
+}
+.jumbotronTitle p {
+  color:#ffffff;
+
+}
+.jumbotronTitle p {
+  text-align: justify;
+}
+.jumbotronImg {
+  width: 40%;
+
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+}
+.jumbotronImg > img {
+  width: 70%;
+  corner-shape: bevel;
+  border-radius: 25%;
+}
+
+/* Populer Course */
+#populerCourse {
+  padding: 2rem 0rem 5rem;
+}
+#populerCourse h2 {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.allCard {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.card {
+  background-color: #ffffff;
+  width: 20%;
+  padding: 0.5% 0.5%;
+  display: flex;
+  border-radius: 0.3rem;
+  flex-direction: column;
+}
+.cardImg {
+  margin-bottom: 0.5rem;
+  height: 55%;
+  border-radius: 0.3rem;
+
+  min-height: 45%;
+  max-height: 45%;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+.cardImg img {
+  border-radius: 0.3rem;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.cardTitle {
+}
+.cardDesc {
+  
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+  text-align: justify;
+
+  min-height: 5rem;
+}
+.cardLink {
+  width: fit-content;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(180deg, #1d4dd1, #2553ed);
+  color: #e3f2fd;
+  padding: 5rem 0px 7rem;
+}
+#footerInfo {
+  padding: 2rem 1rem;
+  background: linear-gradient(170deg, #1946cd, #3162f9);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.span1FooterTitle {
+  color: rgb(255, 255, 255);
+}
+.span2FooterTitle {
+  color: #77c6e2;
+}
+#footerInfo a {
+  color: #e3f2fd;
+}
+#footerInfo div {
+}
+#footerInfo li {
+  list-style: none;
+}
+.info2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  
+}
+.info2 h4{
+  font-size: 1.5em;
+  margin-bottom: 0.5rem;
+}
+.info2 li{
+  margin-bottom: 0.5rem;
+}
+
+.summary {
+  width: 30%;
+}
+.footerTitle {
+  display: flex;
+}
+#sendEmail {
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.08);
+  height:fit-content;
+
+  background: linear-gradient(180deg, #1748ce, #2857e6);
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.emailBox {
+  background-color: #2c59e5;
+  padding: 1rem;
+  width: 30%;
+  border-radius: 0.3rem;
+}
+.emailBox p {
+  margin-top: 0.3rem;
+  text-align: justify;
+}
+.emailBox form div {
+  display: flex;
+  margin-top: 1rem;
+}
+.emailBox form div input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+  width: 70%;
+}
+.emailBox form div button {
+  width: 30%;
+  background-color: #49a254;
+  border: none;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.licenseInfo {
+
+  width: 60%;
+  /* border: solid; */
+  padding: 1rem 2rem;
+}
+.licenseInfo hr {
+  margin: 0.5rem 0;
+  opacity: 0.2;
+}
+
+.licenseInfo .socialMedia {
+  display: flex;
+  gap: 0.5rem;
+}
+.licenseInfo .socialMedia a {
+  /* background-color: red; */
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.instagramLogo{
+  background-image: linear-gradient(225deg, purple 20%, red , yellow 90%);
+}
+.youTubeLogo{
+  background-color: red;
+}
+.facebookLogo{
+  background-color: #3568e8;
+}
+.licenseInfo .socialMedia svg {
+  width: 75% ;
+  height: 75%;
+  fill:#f6f6f6;
+}
+
+.toTop {
+  border-radius: 50%;
+  position: absolute;
+  /* border: solid; */
+  top: 88rem;
+  right: 6rem;
+  text-decoration: none;
+}
+.toTop svg {
+  width: 3rem;
+  /* border: solid; */
+  display: flex;
+  fill: #245ecb;
+  margin: auto;
+}
+.toTop div {
+  padding: 0.75rem 0;
+  border-radius: 50%;
+  height: 6.5rem;
+  background-color: #f6f6f6;
+  width: 6.5rem;
+}
+.toTop p {
+  text-align: center;
+  text-transform: none;
+  color: #000000;
+
+  font-weight: 500;
+  /* border:solid; */
+}
+
+@media (max-width: 868px) {
+  .cardTitle {
+    font-size: 80%;
+  }
+  .cardDesc {
+    font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #jumbotron {
+    /* display: flex; */
+    flex-direction: column-reverse;
+    /* justify-content: center; */
+  }
+  .signUp {
+    display: none;
+  }
+
+  #footerInfo {
+    flex-direction: column;
+  }
+
+  #sendEmail {
+    flex-direction: column;
+  }
+}
