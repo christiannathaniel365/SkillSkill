@@ -1,7 +1,17 @@
-html {
-  background: linear-gradient(180deg, #1d4dd1, #2553ed);
-  height: 100vh;
+@import "preset.css";
+main {
+  background-color: #00000000;
 }
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    var(--cta-soft-color),
+    var(--base-color)
+  );
+  background-repeat: no-repeat;
+}
+
 .authTitle {
   display: flex;
   justify-content: center;
@@ -10,7 +20,7 @@ html {
   margin: auto 0;
 }
 .span1FooterTitle {
-  color: rgb(255, 255, 255);
+  color: var(--neutral-color);
 }
 .span2FooterTitle {
   color: #77c6e2;
@@ -22,60 +32,191 @@ header a {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  padding: 0.3rem;
-  background-color: #ffffff18;
-  border: #ffffff66 solid;
+  padding: 0.5rem 1rem;
+  background-color: var(--neutral-color);
   text-decoration: none;
   border-radius: 1.5rem;
 }
 header a div {
+  gap: 0.5rem;
+  display: flex;
+}
+header h1 {
   display: flex;
 }
 header a svg {
   width: 1.5rem;
-  fill: #ffffff;
-  /* border:solid; */
+  fill: var(--text-color);
   text-decoration: none;
 }
 header a p {
-  color: #ffffff;
+  color: var(--text-color);
+  font-weight: 700;
 }
 /* Login Style */
 #loginForm {
-  background-color: aliceblue;
-  border-radius: 0.3rem;
+  background-color: var(--neutral-color);
+  border-radius: var(--border-radius);
   margin: 4rem auto;
-  padding: 1.5rem 0;
   width: 40%;
-  text-align: center;
-  /* border: solid; */
+  padding-bottom: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--cta-color);
 }
 
-#loginForm form div {
+#loginForm .img {
+  background-image: radial-gradient(
+    var(--neutral-color) 60%,
+    var(--cta-color) 150%
+  );
+
+  padding: 2rem 0;
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+#loginForm img {
+  border-radius: 4rem;
+  width: 50%;
+}
+.loginTitle,
+.loginParagraf {
+  text-align: center;
+}
+label {
+  font-weight: var(--bold-weight);
+}
+.loginParagraf {
+  font-size: var(--paragraf-1);
+  color: var(--text-color);
+}
+
+.loginTitle {
+  font-size: var(--h2-size);
+  color: var(--text-color);
+}
+#loginForm form .inpDiv {
   margin: 0.5rem 0;
-  /* border: solid; */
 }
 .inp {
-  width: 80%;
+  width: 100%;
   height: 2.5rem;
-  border-radius: 0.3rem;
-  border: 1.5px solid #dedede;
+  border-radius: var(--border-radius-btn);
+  border: 1.5px solid var(--cta-soft-color);
+  transition: ease-in-out 200ms;
+  padding-left: var(--border-radius-btn);
   /* border: solid; */
+}
+.inp:focus {
+  border: 0.125rem solid var(--cta-color);
+  outline: none;
+  /* border: solid; */
+}
+.inp:focus::placeholder {
+  color: transparent;
+  transition: ease-in-out 200ms;
+}
+#formLogin {
+  padding: 0 2rem;
+}
+
+label {
+  font-size: var(--border-radius);
+}
+.errMessage {
+  color: var(--danger-color);
+  font-size: var(--border-radius);
+  padding: 0 0.5rem;
+  text-align: justify;
+  display: none;
+}
+.errInp {
+  border: 0.125rem solid var(--danger-color);
+  outline: none;
+  /* border: solid; */
+}
+.asideForm {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dateBirthForm {
+  width: 50%;
+}
+input[type="radio"] {
+  width: 2rem;
+
+  border-color: var(--cta-soft-color);
+}
+input[type="radio"]:checked {
+  width: 2rem;
+}
+.genderForm {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-left: solid var(--cta-color);
+  width: 10rem;
+}
+.labelGender {
+  padding: 0.25rem 0.5rem;
+}
+.genderForm .opt {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.genderForm .opt div {
+  display: flex;
 }
 .loginFlex1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
 
-  gap: 10rem;
+.loginFlex1 div {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.loginFlex1 a {
+  width: auto;
 }
 .btnLogin {
-  width: 80%;
-  background-image: linear-gradient(135deg, #4681ed 40%, #49a254);
+  width: 100%;
+  background: var(--secondary-color);
   color: #ffffff;
   font-weight: 600;
   height: 2rem;
-  border-radius: 0.3rem;
+  border-radius: var(--border-radius-btn);
   border: none;
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--secondary-color);
+  transition: ease-in-out 200ms;
+}
+.btnLoginGoogle {
+  width: 100%;
+  background: var(--base-color);
+  color: var(--text-color);
+  font-weight: 600;
+  height: 2rem;
+  border-radius: var(--border-radius-btn);
+  border: none;
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--cta-soft-color);
+  transition: ease-in-out 200ms;
+}
+
+.btnHover:hover {
+  filter: brightness(0.95);
+  transform: scale(1.02);
+}
+
+.btnDisable {
+  background: var(--cta-soft-color);
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--cta-soft-color);
 }
 .loginFlex1 a {
   margin: auto 0;
@@ -98,8 +239,8 @@ header a p {
   margin: 0.5rem 0;
 }
 .altLogin a {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   text-decoration: none;
   color: white;
   display: flex;
@@ -120,7 +261,16 @@ header a p {
 .githubIcon svg {
   fill: #ffffff;
 }
-
+.confirm p {
+  text-align: center;
+}
+.SignUpLink {
+  margin: 0.5rem 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--cta-hover-color);
+}
 /* End Login Style */
 
 /* Register Style */
@@ -134,4 +284,129 @@ header a p {
   width: 11.6rem;
   margin: auto 0;
   height: 0%;
+}
+.logInLink {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--cta-hover-color);
+}
+.passwordForm {
+  display: flex;
+}
+.passwordForm input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.passwordForm button {
+  padding: 0 var(--border-radius-btn);
+  border: 1.5px solid var(--cta-soft-color);
+  border-left: none;
+  border-top-right-radius: var(--border-radius-btn);
+  border-bottom-right-radius: var(--border-radius-btn);
+
+  background-color: #ffffff;
+}
+
+.passwordForm button svg {
+  width: 1.5rem;
+
+  transition: ease-in-out 200ms;
+  padding: 0.2rem;
+}
+
+.passwordForm button svg:hover {
+  background-color: var(--cta-soft-color);
+  border-radius: var(--border-radius);
+}
+
+.passwordForm input:focus {
+  border-right: none;
+}
+.passwordForm .activebtn {
+  border: 0.125rem solid var(--cta-color);
+  border-left: none;
+}
+.btnNonHidden {
+  display: none;
+}
+
+.passwordForm .errBtn {
+  border: 0.125rem solid var(--danger-color);
+  border-left: none;
+}
+.altRegis {
+  margin: 0.5rem 2rem;
+}
+.confirmPasswordForm {
+  display: flex;
+}
+.confirmPasswordForm > input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.confirmPasswordForm > button {
+  padding: 0 var(--border-radius-btn);
+  border: 1.5px solid var(--cta-soft-color);
+  border-left: none;
+  border-top-right-radius: var(--border-radius-btn);
+  border-bottom-right-radius: var(--border-radius-btn);
+
+  background-color: #ffffff;
+}
+
+.confirmPasswordForm button svg {
+  width: 1.5rem;
+  transition: ease-in-out 200ms;
+  padding: 0.2rem;
+}
+
+.confirmPasswordForm button svg:hover {
+  background-color: var(--cta-soft-color);
+  border-radius: var(--border-radius);
+}
+
+.confirmPasswordForm input:focus {
+  border-right: none;
+}
+.confirmPasswordForm .activebtn {
+  border: 0.125rem solid var(--cta-color);
+  border-left: none;
+}
+
+.confirmPasswordForm .errBtn {
+  border: 0.125rem solid var(--danger-color);
+  border-left: none;
+}
+#formRegister {
+  padding: 0 2rem;
+}
+@media (max-width: 1024px) {
+  .asideForm {
+    flex-direction: column;
+  }
+  .dateBirthForm {
+    width: 100%;
+  }
+  .genderForm {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 864px) {
+  #loginForm {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  #loginForm {
+    width: 80%;
+  }
 }

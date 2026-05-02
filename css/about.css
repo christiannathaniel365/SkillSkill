@@ -1,0 +1,143 @@
+/* Section Jumbotron */
+#jumbotron {
+  background-image: linear-gradient(135deg, #245ecb, aliceblue);
+  padding: 5rem 5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.jumbotronTitle {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+
+  margin: 2rem 0px;
+  padding: 0px auto;
+}
+.jumbotronTitle h2 {
+  font-size: var(--h1-size);
+
+  line-height: 1.2;
+  color: var(--neutral-color);
+}
+.jumbotronTitle p {
+  color: var(--neutral-color);
+
+  font-size: var(--h4-size);
+  text-align: justify;
+}
+.jumbotronImg {
+  width: 40%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+}
+.jumbotronImg > img {
+  width: 100%;
+  box-shadow: 0.1rem 0.1rem 4rem 4rem var(--neutral-color);
+  border-radius: 25%;
+}
+
+/* Vision Section  */
+#vision {
+  padding: 2rem 0rem 5rem;
+
+  display: flex;
+  justify-content: center;
+}
+#vision .visionContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#vision .visionContainer h2 {
+  font-size: var(--h2-size);
+}
+
+#vision .visionImg {
+  width: 40%;
+  height: 18rem;
+}
+#vision .visionImg img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* mission Section  */
+#mission {
+  padding: 2rem 0rem 5rem;
+
+  display: flex;
+  justify-content: center;
+}
+#mission .missionContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#mission .missionContainer h2 {
+  font-size: var(--h2-size);
+}
+
+#mission .missionImg {
+  width: 40%;
+  height: 18rem;
+}
+#mission .missionImg img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+#missionMission h2 {
+  text-align: center;
+}
+.allCard {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+.card {
+  background-color: #ffffff;
+  width: 25rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+  flex-direction: row;
+}
+.cardImg {
+  border-radius: 0.3rem;
+  width: 4rem;
+  height: 6rem;
+  flex-shrink: 0;
+}
+.cardContent {
+  padding: 0.4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cardImg img {
+  border-radius: 0.3rem;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #555;
+}

@@ -1,0 +1,160 @@
+/* Main */
+@import "preset.css";
+
+/* Section Jumbotron */
+#jumbotron {
+  background-image: linear-gradient(135deg, #245ecb, aliceblue);
+  padding: 5rem 5rem 2rem;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  gap: 4rem;
+}
+
+.jumbotronTitle {
+  display: flex;
+  width: 60%;
+  gap: 1rem;
+  flex-direction: column;
+  margin: auto 0px;
+}
+.jumbotronTitle h2 {
+  font-size: var(--h1-size);
+
+  line-height: 1.2;
+  color: #ffffff;
+}
+.jumbotronTitle p {
+  color: #ffffff;
+  text-align: justify;
+  font-size: var(--paragraf-1);
+}
+.jumbotronImg {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  height: 18rem;
+}
+.jumbotronImg > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+#allCourse {
+  padding: 1rem 5rem;
+}
+.filterCourse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inp {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: var(--border-radius-btn);
+  border: 1.5px solid var(--cta-soft-color);
+  transition: ease-in-out 200ms;
+  padding-left: var(--border-radius-btn);
+  /* border: solid; */
+}
+.inp:focus {
+  border: 0.125rem solid var(--cta-color);
+  outline: none;
+  /* border: solid; */
+}
+.searchBox {
+  display: flex;
+  width: 50%;
+}
+.searchBox input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.searchBox button {
+  padding: 0 var(--border-radius-btn);
+  border: 1.5px solid var(--cta-soft-color);
+  border-left: none;
+  border-top-right-radius: var(--border-radius-btn);
+  border-bottom-right-radius: var(--border-radius-btn);
+
+  background-color: #ffffff;
+}
+
+.searchBox button svg {
+  width: 1.5rem;
+
+  transition: ease-in-out 200ms;
+  padding: 0.2rem;
+}
+
+.searchBox button svg:hover {
+  background-color: var(--cta-soft-color);
+  border-radius: var(--border-radius);
+}
+.optCourses {
+  /* border: solid; */
+  width: 30%;
+}
+
+.optCourses select option {
+  border-radius: 0.3rem;
+  width: 90%;
+  height: 2rem;
+  border: 1.5px solid #dedede;
+}
+
+.allCard {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+.card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  max-width: 16rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  flex: 1;
+}
+.cardImg {
+  margin-bottom: 0.5rem;
+  height: 10rem;
+  border-radius: 0.3rem;
+  flex-shrink: 0;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.cardImg img {
+  border-radius: 0.3rem;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.cardTitle {
+  font-size: var(--h4-size);
+  font-weight: 600;
+}
+.cardDesc {
+  font-size: var(--paragraf-2);
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #555;
+}
+.cardLink {
+  margin-top: auto;
+  align-self: flex-end;
+  width: fit-content;
+}

@@ -1,0 +1,155 @@
+@import "preset.css";
+
+/* Section Jumbotron */
+#jumbotron {
+  background-image: linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--cta-soft-color)
+  );
+}
+
+.jumbotronTitle {
+  display: flex;
+  width: 60%;
+  margin: auto 0px;
+  flex-direction: column;
+}
+.jumbotronTitle h2 {
+  font-size: var(--h1-size);
+
+  line-height: 1.2;
+  color: #ffffff;
+}
+.jumbotronTitle p {
+  color: #ffffff;
+  text-align: justify;
+  font-size: var(--paragraf-1);
+}
+.jumbotronImg {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.jumbotronImg > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.inp {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: var(--border-radius-btn);
+  border: 1.5px solid var(--cta-soft-color);
+  transition: ease-in-out 200ms;
+  padding-left: var(--border-radius-btn);
+  /* border: solid; */
+}
+.inp:focus {
+  border: 0.125rem solid var(--cta-color);
+  outline: none;
+  /* border: solid; */
+}
+.searchBox {
+  display: flex;
+  width: 50%;
+}
+.searchBox input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.searchBox button {
+  padding: 0 var(--border-radius-btn);
+  border: 1.5px solid var(--cta-soft-color);
+  border-left: none;
+  border-top-right-radius: var(--border-radius-btn);
+  border-bottom-right-radius: var(--border-radius-btn);
+
+  background-color: #ffffff;
+}
+
+.searchBox button svg {
+  width: 1.5rem;
+
+  transition: ease-in-out 200ms;
+  padding: 0.2rem;
+}
+
+.searchBox button svg:hover {
+  background-color: var(--cta-soft-color);
+  border-radius: var(--border-radius);
+}
+#jobsOpening {
+  background-color: var(--cta-soft-color);
+  padding: 2rem;
+  margin: 3rem 5rem;
+  border-radius: var(--border-radius);
+}
+
+#jobsOpening h2 {
+  text-align: center;
+  font-size: var(--h2-size);
+}
+#jobsOpening .job {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--neutral-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+.allJobs {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#jobsOpening .cardIdentity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 2;
+}
+
+.cardIdentity h3 {
+  font-size: var(--h3-size);
+}
+
+.cardIdentity p {
+  font-size: var(--paragraf-2);
+}
+#jobsOpening .cardIdentity .cardImg {
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+}
+#jobsOpening .cardIdentity .cardImg img {
+  border-radius: var(--border-radius-btn);
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.cardTitle {
+  text-align: start;
+}
+#jobsOpening .jobInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  flex: 1;
+}
+#jobsOpening .jobInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+#jobsOpening .apply {
+  flex: 0.5;
+  text-align: right;
+}

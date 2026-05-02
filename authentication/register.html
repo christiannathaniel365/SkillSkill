@@ -4,48 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/LogoNavbar.png" />
-       <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
     <title>Sign in</title>
-
+    <script src="../js/formRegisterValidation.js"></script>
   </head>
   <body>
     <header>
-       <a href="../index.html">
+      <a href="../index.html">
         <div>
-
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M73.4 297.4C60.9 309.9 60.9 330.2 73.4 342.7L233.4 502.7C245.9 515.2 266.2 515.2 278.7 502.7C291.2 490.2 291.2 469.9 278.7 457.4L173.3 352L544 352C561.7 352 576 337.7 576 320C576 302.3 561.7 288 544 288L173.3 288L278.7 182.6C291.2 170.1 291.2 149.8 278.7 137.3C266.2 124.8 245.9 124.8 233.4 137.3L73.4 297.3z"/></svg>
-          <p>Back to Home</p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M73.4 297.4C60.9 309.9 60.9 330.2 73.4 342.7L233.4 502.7C245.9 515.2 266.2 515.2 278.7 502.7C291.2 490.2 291.2 469.9 278.7 457.4L173.3 352L544 352C561.7 352 576 337.7 576 320C576 302.3 561.7 288 544 288L173.3 288L278.7 182.6C291.2 170.1 291.2 149.8 278.7 137.3C266.2 124.8 245.9 124.8 233.4 137.3L73.4 297.3z"
+            />
+          </svg>
+          <p>Back</p>
         </div>
       </a>
-       <div class="authTitle">
-            <img
-              class="navLogo"
-              src="../assets/footer/LogoTransparent.png"
-              alt=""
-            />
-            <h1>
-              <span class="span1FooterTitle">Skill</span
-              ><span class="span2FooterTitle">Skill</span>
-            </h1>
-          </div>
+      <div class="authTitle">
+        <img
+          class="navLogo"
+          src="../assets/footer/LogoTransparent.png"
+          alt=""
+        />
+        <h1>
+          <span class="span1FooterTitle">Skill</span>
+          <span class="span2FooterTitle">Skill</span>
+        </h1>
+      </div>
     </header>
     <main>
       <section id="loginForm">
-        <h2 class="loginTitle"">Create Account</h2>
-        <p class="loginParagraf">Please login to your account</p>
-        <form action="post">
-          <div>
-            <!-- <label for="email"> name </label> -->
-            <input class="inp" type="text" name="" id="name" placeholder="Enter Your Email"/>
-          </div>
-          <div>
-            <!-- <label for="name"> Password </label> -->
-            <input class="inp" type="text" name="" id="name" placeholder="Enter Your Password" />
-          </div>
+        <div class="img">
+          <h2 class="loginTitle">Join VisualSkill Today!</h2>
+          <p class="loginParagraf">Create your account to start learning.</p>
+          <img src="../assets/maskot/capy (14).png" alt="" />
+        </div>
 
-          <div >
-            <button class="btnLogin" type="button">Sign Up</button>
+        <form action="" id="formRegister">
+          <div class="inpDiv">
+            <label for="email">Email</label>
+            <input
+              class="inp"
+              type="text"
+              id="email"
+              placeholder="Ex: exampleEmail@gmail.com"
+            />
+            <p class="errMessage" id="errMsg"></p>
+          </div>
+          <div class="inpDiv">
+            <label for="username">Username</label>
+
+            <input
+              class="inp"
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Ex: MichaelRobertSwosky67"
+            />
+            <p class="errMessage" id="errMsg"></p>
+          </div>
+          <div class="asideForm">
+            <div class="dateBirthForm">
+              <label for="dateBirth">Date of Birth: </label>
+
+              <input class="inp" type="date" name="dateBirth" id="dateBirth" />
+              <p class="errMessage" id="errMsg"></p>
+            </div>
+            <div class="genderForm">
+              <label for="gender" class="labelGender">Gender:</label>
+              <div class="opt">
+                <div>
+                  <input type="radio" name="gender" id="genderMale" />
+                  <label for="genderMale">Male</label>
+                </div>
+                <div>
+                  <input type="radio" name="gender" id="genderFemale" />
+                  <label for="genderfemale">Female</label>
+                </div>
+              </div>
+              <p class="errMessage" id="errMsg"></p>
+            </div>
+          </div>
+          <div class="inpDiv">
+            <label for="password">Password</label>
+
+            <div class="passwordForm">
+              <input
+                class="inp"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Must More than 8 character"
+              />
+              <button class="btnHidden" id="btnHidden" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M256 160L256 224L384 224L384 160C384 124.7 355.3 96 320 96C284.7 96 256 124.7 256 160zM192 224L192 160C192 89.3 249.3 32 320 32C390.7 32 448 89.3 448 160L448 224C483.3 224 512 252.7 512 288L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 288C128 252.7 156.7 224 192 224z"
+                  />
+                </svg>
+              </button>
+              <button class="btnNonHidden" id="btnNonHidden" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M416 160C416 124.7 444.7 96 480 96C515.3 96 544 124.7 544 160L544 192C544 209.7 558.3 224 576 224C593.7 224 608 209.7 608 192L608 160C608 89.3 550.7 32 480 32C409.3 32 352 89.3 352 160L352 224L192 224C156.7 224 128 252.7 128 288L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 288C512 252.7 483.3 224 448 224L416 224L416 160z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="errMessage" id="errMsg"></p>
+          </div>
+          <div class="inpDiv">
+            <label for="password">Confirm Password</label>
+            <div class="confirmPasswordForm">
+              <input
+                class="inp"
+                type="password"
+                name="password"
+                id="confirmPassword"
+                placeholder="Confirm Your Password"
+              />
+              <button class="btnHidden" id="btnHidden" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M256 160L256 224L384 224L384 160C384 124.7 355.3 96 320 96C284.7 96 256 124.7 256 160zM192 224L192 160C192 89.3 249.3 32 320 32C390.7 32 448 89.3 448 160L448 224C483.3 224 512 252.7 512 288L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 288C128 252.7 156.7 224 192 224z"
+                  />
+                </svg>
+              </button>
+              <button class="btnNonHidden" id="btnNonHidden" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M416 160C416 124.7 444.7 96 480 96C515.3 96 544 124.7 544 160L544 192C544 209.7 558.3 224 576 224C593.7 224 608 209.7 608 192L608 160C608 89.3 550.7 32 480 32C409.3 32 352 89.3 352 160L352 224L192 224C156.7 224 128 252.7 128 288L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 288C512 252.7 483.3 224 448 224L416 224L416 160z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="errMessage" id="errMsg"></p>
+          </div>
+          <div class="inpDiv">
+            <button class="btnLogin btnHover" id="btnSubmit" type="submit">
+              Sign Up
+            </button>
           </div>
         </form>
         <div class="RegisterFlex1">
@@ -54,10 +153,15 @@
           <hr />
         </div>
         <div class="altRegis">
-       <button class="btnLogin" type="button">Continue With Google</button>
+          <button class="btnLoginGoogle" type="submit">
+            Continue With Google
+          </button>
         </div>
-        <div>
-          <p>Already have an Account? <a href="../authentication/login.html">Login</a></p>
+        <div class="confirm">
+          <p>
+            Already have an Account?
+            <a class="logInLink" href="../authentication/login.html">Login</a>
+          </p>
         </div>
       </section>
     </main>
