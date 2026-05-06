@@ -13,16 +13,17 @@
   display: flex;
   width: 60%;
   margin: auto 0px;
+  gap: 1rem;
   flex-direction: column;
 }
 .jumbotronTitle h2 {
   font-size: var(--h1-size);
 
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--neutral-color);
 }
 .jumbotronTitle p {
-  color: #ffffff;
+  color: var(--neutral-color);
   text-align: justify;
   font-size: var(--paragraf-1);
 }
@@ -53,9 +54,11 @@
 }
 .searchBox {
   display: flex;
-  width: 50%;
+  width: 100%;
+  justify-content: center;
 }
 .searchBox input {
+  width: 60%;
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -91,6 +94,7 @@
 #jobsOpening h2 {
   text-align: center;
   font-size: var(--h2-size);
+  margin-bottom: 1rem;
 }
 #jobsOpening .job {
   display: flex;
@@ -152,4 +156,75 @@
 #jobsOpening .apply {
   flex: 0.5;
   text-align: right;
+}
+
+.fAskQuestion {
+  padding: 3rem 6rem 6rem;
+  background-color: var(--primary-color);
+}
+.fAskQuestion .title h2 {
+  font-size: var(--h2-size);
+  color: var(--neutral-color);
+  text-align: center;
+
+  margin-bottom: 5rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  background-color: var(--neutral-color);
+  box-shadow: 0.1rem 0.1rem 3rem 3rem var(--neutral-color);
+}
+
+.fAskQuestion .containImg {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.faqItem {
+  border-bottom: 1px solid #ddd;
+}
+
+.faqQuestion {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faqQuestion:hover {
+  color: #4f46e5;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faqAnswer p {
+  padding: 0 1rem 1rem;
+  color: #555;
+}
+
+.faqItem.active .faqAnswer {
+  max-height: 200px;
+}
+
+.faqItem.active .icon {
+  transform: rotate(45deg);
+}
+
+.icon {
+  transition: transform 0.3s;
 }

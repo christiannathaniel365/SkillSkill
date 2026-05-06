@@ -53,4 +53,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
             `;
   });
   allJobs.innerHTML = html;
+  const faqItems = document.querySelectorAll(".faqItem");
+
+  faqItems.forEach((item) => {
+    const btn = item.querySelector(".faqQuestion");
+
+    btn.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
 });

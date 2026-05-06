@@ -144,30 +144,34 @@ footer {
   color: var(--cta-color);
 }
 
-#footerInfo a {
-  color: #e3f2fd;
-}
 
 #footerInfo li {
   list-style: none;
 }
 .info1 {
   width: 50%;
+  padding-right: 3rem;
 }
 .info2 {
   display: flex;
   gap: 6rem;
   width: 50%;
+  align-items: center;
   justify-content: space-between;
 }
 
 .info2 li {
-  font-size: var(--h4-size);
+  font-size: var(--paragraf-1);
   color: var(--cta-hover-color);
   margin-bottom: 0.5rem;
   font-weight: var(--bold-weight);
+  transition: ease-in-out 300ms;
+  cursor: pointer;
 }
-
+.info2 li:hover {
+  color: var(--cta-color);
+  transform: scale(1.1);
+}
 .summary {
   width: 100%;
   display: flex;
@@ -204,6 +208,8 @@ footer {
   background-color: var(--base-color);
   padding: 1rem;
   width: 40%;
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--neutral-color);
+
   color: var(--text-color);
   border-radius: 0.3rem;
 }

@@ -59,8 +59,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
               </h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              incidunt.
+              SkillSkill provides flexible learning, smart tools, and real projects to help you grow your skills and achieve your goals.
             </p>
           </div>
 
@@ -70,6 +69,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             <li>Courses</li>
             <li>Career</li>
           </ul>
+          
         </div>
       </section>
       <section id="sendEmail">

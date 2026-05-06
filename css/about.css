@@ -1,11 +1,15 @@
 /* Section Jumbotron */
 #jumbotron {
-  background-image: linear-gradient(135deg, #245ecb, aliceblue);
-  padding: 5rem 5rem 3rem;
+  background-image: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--base-color)
+  );
+  padding: 5rem 6rem 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-between;
+  gap: 6rem;
 }
 
 .jumbotronTitle {
@@ -25,7 +29,7 @@
 .jumbotronTitle p {
   color: var(--neutral-color);
 
-  font-size: var(--h4-size);
+  font-size: var(--paragraf-1);
   text-align: justify;
 }
 .jumbotronImg {
@@ -42,10 +46,11 @@
 
 /* Vision Section  */
 #vision {
-  padding: 2rem 0rem 5rem;
+  margin-top: 3rem;
+  padding: 2rem 6rem 5rem;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 #vision .visionContainer {
   width: 40%;
@@ -56,6 +61,11 @@
 }
 #vision .visionContainer h2 {
   font-size: var(--h2-size);
+  color: var(--text-color);
+}
+#vision .visionContainer p {
+  font-size: var(--paragraf-1);
+  text-align: justify;
 }
 
 #vision .visionImg {
@@ -63,17 +73,18 @@
   height: 18rem;
 }
 #vision .visionImg img {
-  width: 100%;
-  object-fit: cover;
+  width: 80%;
+  /* object-fit: cover; */
   height: 100%;
+  box-shadow: 0.1rem 0.1rem 4rem 4rem var(--neutral-color);
 }
 
 /* mission Section  */
 #mission {
-  padding: 2rem 0rem 5rem;
+  padding: 2rem 6rem 5rem;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 #mission .missionContainer {
   width: 40%;
@@ -84,6 +95,11 @@
 }
 #mission .missionContainer h2 {
   font-size: var(--h2-size);
+  color: var(--text-color);
+}
+#mission .missionContainer p {
+  font-size: var(--paragraf-1);
+  text-align: justify;
 }
 
 #mission .missionImg {
@@ -94,6 +110,7 @@
   width: 100%;
   object-fit: cover;
   height: 100%;
+  box-shadow: 0.1rem 0.1rem 4rem 4rem var(--neutral-color);
 }
 
 #missionMission h2 {
@@ -105,7 +122,7 @@
   justify-content: center;
 }
 .card {
-  background-color: #ffffff;
+  background-color: var(--neutral-color);
   width: 25rem;
   padding: 0.5rem;
   display: flex;
@@ -135,9 +152,64 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
+#ourTeam {
+  padding: 3rem;
+  background-color: var(--cta-color);
+}
 
+#ourTeam h2 {
+  text-align: center;
+  font-size: var(--h2-size);
+  color: var(--neutral-color);
+  text-align: center;
+}
 .cardDesc {
   font-size: 0.9rem;
   text-align: justify;
   color: #555;
+}
+
+.teamGrid {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.teamCard {
+  width: 220px;
+  background: var(--neutral-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--neutral-color);
+
+  transition: ease-in-out 300ms;
+  text-align: center;
+}
+
+.teamCard:hover {
+  transform: scale(1.1);
+}
+.teamCard img {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+.teamCard div {
+  display: flex;
+  justify-content: center;
+}
+
+.teamCard h4 {
+  font-size: var(--h4-size);
+  /* margin-bottom: 0.3rem; */
+  color: var(--text-color);
+}
+
+.teamCard span {
+  color: var(--text-color);
+  font-size: var(--paragraf-2);
 }
