@@ -104,6 +104,37 @@ nav {
 
   transform: scale(1.03);
 }
+.hamburger {
+  display: none;
+
+  flex-direction: column;
+  gap: 0.35rem;
+
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 1.7rem;
+  height: 0.25rem;
+
+  background: var(--cta-hover-color);
+  border-radius: 2rem;
+
+  transition: 0.3s;
+}
+
+/* HAMBURGER ANIMATION */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(13px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-13px);
+}
 #jumbotron {
   background-image: linear-gradient(
     180deg,
@@ -143,7 +174,6 @@ footer {
 .span2FooterTitle {
   color: var(--cta-color);
 }
-
 
 #footerInfo li {
   list-style: none;
@@ -281,8 +311,8 @@ footer {
 }
 .licenseInfo .socialMedia a {
   /* background-color: red; */
-  width: 60px;
-  height: 60px;
+  width: 4rem;
+  height: 4rem;
   text-decoration: none;
   color: white;
   display: flex;
@@ -377,13 +407,63 @@ footer {
 }
 
 @media (max-width: 700px) {
-  
+  .navTitle h1 {
+    display: flex;
+  }
+  .signUp {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+    z-index: 100;
+  }
+
+  .navList {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--neutral-color);
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 6rem;
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+
+  .navList.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navBtnLink {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .navBtnLink .btn {
+    width: 100%;
+    height: 4rem;
+    font-size: var(--h3-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #sendEmail {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8rem;
   }
   .licenseInfo {
     width: 100%;
+    text-align: center;
+  }
+  .licenseInfo .socialMedia {
+    justify-content: center;
   }
   .emailBox {
     width: 100%;
@@ -393,7 +473,13 @@ footer {
     gap: 1rem;
   }
   .info1 {
+    padding: 0;
     width: 100%;
+  }
+  .info1 .footerTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
   }
   .info2 {
     width: 100%;
@@ -407,10 +493,28 @@ footer {
     gap: 3rem;
     flex-direction: column;
   }
+
+  .toTop {
+    width: fit-content;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 576px) {
   nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 0 2rem;
+  }
+  .navList {
+    padding: 2rem;
+  }
+  #jumbotron {
+    padding: 5rem 2rem 3rem;
+  }
+  #footerInfo {
+    padding: 2rem 2rem 5rem;
+  }
+  #sendEmail {
+    padding: 2rem 2rem 8rem;
   }
 }

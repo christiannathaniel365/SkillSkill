@@ -43,6 +43,42 @@
   box-shadow: 0.1rem 0.1rem 4rem 4rem var(--neutral-color);
   border-radius: 25%;
 }
+#ourStory {
+  margin-top: 3rem;
+  padding: 2rem 6rem 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ourStory h2 {
+  font-size: var(--h2-size);
+  color: var(--text-color);
+}
+#ourStory p{
+  text-align: justify;
+}
+#ourStory h3{
+   font-size: var(--h3-size);
+  color: var(--text-color);
+}
+#ourStory .stories{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#ourStory .ourStoryImg{
+  width: 40%;
+  height: 18rem;
+}
+#ourStory .ourStoryImg img {
+  width: 80%;
+  /* object-fit: cover; */
+  height: 100%;
+  box-shadow: 0.1rem 0.1rem 4rem 4rem var(--neutral-color);
+}
 
 /* Vision Section  */
 #vision {
@@ -150,7 +186,7 @@
 }
 .cardTitle {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: var(--bold-weight);
 }
 #ourTeam {
   padding: 3rem;
@@ -166,7 +202,7 @@
 .cardDesc {
   font-size: 0.9rem;
   text-align: justify;
-  color: #555;
+  color: var(--text-color);
 }
 
 .teamGrid {
@@ -178,7 +214,7 @@
 }
 
 .teamCard {
-  width: 220px;
+  width: 14rem;
   background: var(--neutral-color);
   padding: 1.5rem;
   border-radius: var(--border-radius);
@@ -205,11 +241,57 @@
 
 .teamCard h4 {
   font-size: var(--h4-size);
-  /* margin-bottom: 0.3rem; */
   color: var(--text-color);
 }
 
 .teamCard span {
   color: var(--text-color);
   font-size: var(--paragraf-2);
+}
+
+@media (max-width: 700px) {
+  #jumbotron {
+    flex-direction: column;
+  }
+
+  #jumbotron > div {
+    width: 100%;
+  }
+  #vision {
+    flex-direction: column-reverse;
+  }
+  #vision .visionImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #vision .visionContainer {
+    width: 100%;
+  }
+  #mission {
+    flex-direction: column;
+  }
+  #mission .missionImg {
+    width: 100%;
+  }
+  #mission .missionContainer {
+    width: 100%;
+  }
+  #vision h2, 
+  #mission h2, #ourStory h2 {
+    text-align: center;
+  }
+  #ourStory{
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+   #ourStory .stories{
+    width: 100%;
+  }
+  #ourStory .ourStoryImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }

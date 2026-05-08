@@ -5,7 +5,7 @@
   background-image: linear-gradient(
     180deg,
     var(--primary-color),
-    var(--cta-soft-color)
+    var(--cta-color)
   );
 }
 
@@ -69,8 +69,9 @@
   border-left: none;
   border-top-right-radius: var(--border-radius-btn);
   border-bottom-right-radius: var(--border-radius-btn);
-
-  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-color: var(--neutral-color);
 }
 
 .searchBox button svg {
@@ -119,12 +120,14 @@
   flex: 2;
 }
 
+
 .cardIdentity h3 {
   font-size: var(--h3-size);
 }
 
 .cardIdentity p {
   font-size: var(--paragraf-2);
+  text-align: justify;
 }
 #jobsOpening .cardIdentity .cardImg {
   width: 5rem;
@@ -145,8 +148,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-
-  flex: 1;
+  width: 18rem;
 }
 #jobsOpening .jobInfo ul {
   list-style: none;
@@ -159,7 +161,7 @@
 }
 
 .fAskQuestion {
-  padding: 3rem 6rem 6rem;
+  padding: 3rem 5rem 6rem;
   background-color: var(--primary-color);
 }
 .fAskQuestion .title h2 {
@@ -195,7 +197,7 @@
   border: none;
   padding: 1rem;
   text-align: left;
-  font-size: 1rem;
+  font-size: var(--h4-size);
   font-weight: 600;
   display: flex;
   justify-content: space-between;
@@ -203,7 +205,7 @@
 }
 
 .faqQuestion:hover {
-  color: #4f46e5;
+  color: var(--cta-hover-color);
 }
 
 .faqAnswer {
@@ -214,11 +216,12 @@
 
 .faqAnswer p {
   padding: 0 1rem 1rem;
-  color: #555;
+  color: var(--text-color);
+  font-size: var(--paragraf-2);
 }
 
 .faqItem.active .faqAnswer {
-  max-height: 200px;
+  max-height: 13rem;
 }
 
 .faqItem.active .icon {
@@ -227,4 +230,66 @@
 
 .icon {
   transition: transform 0.3s;
+}
+@media (max-width: 868px) {
+  #jobsOpening .job {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #jobsOpening .jobInfo {
+    width: 100%;
+  }
+  #jobsOpening .jobInfo .jobLocation {
+    display: flex;
+    width: 15rem;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  #jumbotron {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #jumbotron div {
+    width: 100%;
+  }
+  .jumbotronTitle {
+    text-align: center;
+  }
+  .jumbotronTitle p {
+    text-align: center;
+  }
+  .fAskQuestion .containImg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #jobsOpening .cardIdentity {
+    flex-direction: column;
+  }
+  #jobsOpening .cardIdentity .cardImg {
+    width: 100%;
+  }
+  #jobsOpening .jobInfo {
+    flex-direction: column;
+  }
+  #jobsOpening .jobInfo .jobLocation {
+    width: 100%;
+  }
+  #jobsOpening a {
+    width: 100%;
+    text-align: center;
+  }
+  #jobsOpening h3 {
+    font-size: var(--h4-size);
+  }
+  #jobsOpening h3 {
+    font-size: var(--h4-size);
+  }
+
 }

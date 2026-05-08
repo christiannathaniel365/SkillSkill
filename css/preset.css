@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color: #5579d5;
+  --primary-color: #213C83;
   --secondary-color: #fbbf43;
   --base-color: #f0f4fd;
-  --cta-color: #a58ae6;
+  --cta-color: #4A23A4;
   --cta-soft-color: #cdd9f4;
-  --cta-hover-color: #6576b3;
+  --cta-hover-color: #34406A;
   --neutral-color: #ffffff;
   --danger-color: #e8000c;
   --text-color: #333347;
