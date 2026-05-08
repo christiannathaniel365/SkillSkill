@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         </div>
         <div class="licenseInfo">
           <div class="copyright">
-            &copy 2026 <b>SkillSkill</b>. Built with passion. All rights
+            &copy 2026 <b>VisualSkill</b>. Built with passion. All rights
             reserved.
           </div>
           <hr />
