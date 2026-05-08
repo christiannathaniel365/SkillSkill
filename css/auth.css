@@ -20,10 +20,10 @@ body {
   margin: auto 0;
 }
 .span1FooterTitle {
-  color: var(--neutral-color);
+  color: var(--primary-color);
 }
 .span2FooterTitle {
-  color: #77c6e2;
+  color: var(--cta-color);
 }
 .navLogo {
   width: 5%;
@@ -189,7 +189,7 @@ input[type="radio"]:checked {
 .btnLogin {
   width: 100%;
   background: var(--secondary-color);
-  color: #ffffff;
+  color: var(--neutral-color);
   font-weight: 600;
   height: 2rem;
   border-radius: var(--border-radius-btn);
@@ -242,7 +242,7 @@ input[type="radio"]:checked {
   width: 3rem;
   height: 3rem;
   text-decoration: none;
-  color: white;
+  color: var(--neutral-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,7 +259,7 @@ input[type="radio"]:checked {
   background-color: #000000;
 }
 .githubIcon svg {
-  fill: #ffffff;
+  fill: var(--neutral-color);
 }
 .confirm p {
   text-align: center;
@@ -306,7 +306,7 @@ input[type="radio"]:checked {
   border-top-right-radius: var(--border-radius-btn);
   border-bottom-right-radius: var(--border-radius-btn);
 
-  background-color: #ffffff;
+  background-color: var(--neutral-color);
 }
 
 .passwordForm button svg {
